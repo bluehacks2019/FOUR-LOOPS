@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Silogs"
+    android:background="@color/colorAccent">
+
+
+    <Button
+        android:layout_alignParentStart="true"
+        android:textColor="#1f0036"
+        android:backgroundTintMode="add"
+        android:backgroundTint="@color/colorAccent"
+        android:background="@drawable/longsilog"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/Burgers"
+        android:text="Longsilog"
+        android:onClick="longsilog"
+        >
+
+
+    </Button>
+
+
+    <Button
+        android:layout_alignParentEnd="true"
+        android:textColor="#1f0036"
+        android:backgroundTintMode="add"
+        android:backgroundTint="@color/colorAccent"
+        android:background="@drawable/hotdog"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/Spaghetti"
+        android:text="Hotsilog"
+        android:layout_toRightOf="@id/Burgers"
+        android:onClick="hotsilog"
+        >
+
+
+    </Button>
+
+
+    <Button
+        android:layout_alignParentStart="true"
+        android:textColor="#1f0036"
+        android:backgroundTintMode="add"
+        android:backgroundTint="@color/colorAccent"
+        android:background="@drawable/tosilog"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/Chicken"
+        android:text="Tosilog"
+        android:onClick="tosilog"
+        android:layout_below="@id/Burgers"
+        >
+
+
+    </Button>
+
+
+    <Button
+        android:layout_alignParentEnd="true"
+        android:textColor="#1f0036"
+        android:backgroundTintMode="add"
+        android:backgroundTint="@color/colorAccent"
+        android:background="@drawable/porksilog"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/Fries"
+        android:text="Porksilog"
+        android:onClick="porksilog"
+        android:layout_toRightOf="@id/Chicken"
+        android:layout_below="@+id/Spaghetti"
+        >
+    </Button>
+
+</RelativeLayout>

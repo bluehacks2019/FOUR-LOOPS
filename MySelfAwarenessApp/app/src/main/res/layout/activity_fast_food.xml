@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FastFood"
+    android:background="@color/colorAccent">
+
+
+    <Button
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@color/colorAccent"
+        android:backgroundTintMode="add"
+        android:background="@drawable/burger"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/Burgers"
+        android:text="Burger"
+        android:textColor="#1f0036"
+        android:onClick="burger"
+        android:textColorHighlight="@color/colorAccent"
+        >
+
+
+    </Button>
+
+
+    <Button
+        android:backgroundTintMode="add"
+        android:backgroundTint="@color/colorAccent"
+        android:background="@drawable/spag"
+        android:textColor="#1f0036"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/Spaghetti"
+        android:layout_alignParentRight="true"
+        android:text="Spaghetti"
+        android:layout_toRightOf="@id/Burgers"
+        android:onClick="Spag"
+        >
+
+
+    </Button>
+
+
+    <Button
+        android:backgroundTintMode="add"
+        android:backgroundTint="@color/colorAccent"
+        android:background="@drawable/chicken"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/Chicken"
+        android:layout_alignParentStart="true"
+        android:text="Chicken"
+        android:textColor="#1f0036"
+        android:onClick="chick"
+        android:layout_below="@id/Burgers"
+        >
+
+
+    </Button>
+
+
+    <Button
+        android:background="@drawable/fries"
+        android:backgroundTintMode="add"
+        android:textColor="#1f0036"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/Fries"
+        android:text="Fries"
+        android:onClick="fries"
+        android:layout_toRightOf="@id/Chicken"
+        android:layout_below="@+id/Spaghetti"
+        >
+    </Button>
+
+</RelativeLayout>

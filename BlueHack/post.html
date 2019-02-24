@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <script src="assets/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="assets/main.css" />
+</head>
+<body>
+    <div id="post-cointainer" class="container">
+        <div id="user-post-holder" class="user-bubble poster-holder">
+            <div class="bubble-user-img-holder poster-img"><img class="user-avatar" src="assets/man.png" /></div>
+            <p class="message-text post-thread-poster">Gerald Cells</p>
+            <p class="usr-loc">Manila<span> </span><span class="glyphicon glyphicon-map-marker"></span></p>
+            <p class="usr-post">I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.</p>
+            <p class="emotion">Happy<span> </span><span class="glyphicon glyphicon-user"></span></p>
+        </div>
+        <div id="user-post-holder" class="user-bubble poster-holder">
+            <div class="bubble-user-img-holder poster-img"><img class="user-avatar" src="assets/girl.png" /></div>
+            <p class="message-text post-thread-poster">Pauline Alcantara</p>
+            <p class="usr-loc">Manila<span> </span><span class="glyphicon glyphicon-map-marker"></span></p>
+            <p class="usr-post">You've gotta dance like there's nobody watching,
+Love like you'll never be hurt,
+Sing like there's nobody listening,
+And live like it's heaven on earth.</p>
+            <p class="emotion">Sad<span> </span><span class="glyphicon glyphicon-user"></span></p>
+        </div>
+        <div id="user-post-holder" class="user-bubble poster-holder">
+            <div class="bubble-user-img-holder poster-img"><img class="user-avatar" src="assets/girl_1.png" /></div>
+            <p class="message-text post-thread-poster">Gelyn</p>
+            <p class="usr-loc">Manila<span> </span><span class="glyphicon glyphicon-map-marker"></span></p>
+            <p class="usr-post">In three words I can sum up everything I've learned about life: it goes on.</p>
+            <p class="emotion">Sad<span> </span><span class="glyphicon glyphicon-user"></span></p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        
+        $(document).ready(function () {
+            $(".poster-holder").click(function(){
+                window.location.replace("http://192.168.43.23/xampp/Bluehacks/BlueHack/thread.html");
+            }); 
+        });
+
+    </script>
+</body>
+</html>

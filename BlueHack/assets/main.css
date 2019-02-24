@@ -1,0 +1,244 @@
+﻿body, html {
+    height: 100%;
+}
+
+#thread-container {
+    height: 100%;
+    max-width: 100%; /*Change This*/
+    padding: 0px;
+    position: relative;
+    background: #6e58b4;
+}
+
+.topper {
+    opacity: 0.9;
+    padding-left: 10px;
+    background-color: #1f0036;
+    width: 100%;
+    height: 8%;
+    position: relative;
+    border-radius: 3px 3px 0 0px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+}
+
+.vertical-center {
+    margin: 0;
+    margin-top: 4px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#label1 {
+    color: #fff;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.message-holder {
+    border-width: 1px;
+    border-color: #808080;
+    border-left-style: solid;
+    border-right-style: solid;
+    width: 100%;
+    height: 82%;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+
+    .message-holder::-webkit-scrollbar {
+        display: none;
+    }
+
+.messages {
+    border-width: 1px;
+    border-color: #808080;
+    border-style: solid;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 65px;
+    width: 100%;
+}
+
+#user-messages {
+    resize: none;
+    height: 75%;
+    width: 65%;
+    border-radius: 20px;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    outline: none;
+    padding: 10px;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    text-align: center left;
+    border-style: solid;
+    border-color: #a3a3a3;
+    border-width: 2px;
+}
+
+    #user-messages::-webkit-scrollbar {
+        display: none;
+    }
+
+.btn {
+    width: 95px;
+    height: 43px;
+    position: relative;
+    margin-top: 8px;
+    border-radius: 15px;
+    float: right;
+    margin-right: 8px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#send-btn {
+    outline: none;
+}
+
+
+.user-avatar {
+    border-radius: 100%;
+    height: 44px;
+    width: 44px;
+}
+
+.bubble-user-img-holder {
+    height: 44px;
+    width: 44px;
+    float: left;
+    margin-top: -2px;
+    margin-left: -2px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.2);
+}
+
+.message-text {
+    position: relative;
+    color: #eee;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+    display: inline-block;
+    font-family: 'Segoe UI';
+    font-size: 19px;
+    word-break: break-word;
+}
+
+.user-bubble {
+    position: relative;
+    margin-top: 10px;
+    max-height: 1000px;
+    padding-right: 8px;
+    padding-bottom: 5px;
+    background-color: #585579;
+    border-radius: 25px 20px 20px 20px;
+    box-shadow: 1px 4px 4px 0 rgba(0,0,0,0.2);
+    margin-bottom: 7px;
+}
+
+.user-avatar-me {
+    border-radius: 100%;
+    height: 44px;
+    width: 44px;
+}
+
+.bubble-user-img-holder-me {
+    height: 44px;
+    width: 44px;
+    float: right;
+    margin-top: -2px;
+    margin-right: -2px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.2);
+}
+
+.message-text-me {
+    position: relative;
+    color: #eee;
+    margin-top: 10px;
+    margin-right: 26px;
+    padding-left:20px;
+    text-align: left;
+    display: inline-block;
+    font-family: 'Segoe UI';
+    font-size: 19px;
+    word-break: break-word;
+}
+
+.user-bubble-me {
+    position: relative;
+    margin-top: 10px;
+    max-height: 1000px;
+    padding-left: 8px;
+    padding-bottom: 5px;
+    background-color: #3f3b6b;
+    border-radius: 25px 20px 20px 20px;
+    box-shadow: 1px 4px 4px 0 rgba(0,0,0,0.2);
+    margin-bottom: 7px;
+}
+
+.post-cointainer {
+    border: 1px solid;
+    height: 100%;
+    max-width: 93%; /*Change This*/
+    padding: 0px;
+    position: relative;
+    overflow-y: hidden;
+    padding: 10px;
+    background: #6e58b4;
+}
+
+.post-thread-poster {
+    margin-top: 8px;
+    margin-left: 11px;
+    font-size: 25px;
+    font-family:'Trebuchet MS';
+    font-weight: 600;
+}
+
+.poster-holder {
+    border-radius: 5px 3px 3px 3px;
+    max-height: 1000px;
+    min-height: 130px;
+    background: #3f3b6b;
+}
+
+.poster-img {
+    border-radius: 100%;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    box-shadow: 0 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+.usr-post {
+    word-break: break-word;
+    margin-left: 55px;
+    font-size: 18px;
+    color: #d8d8d8;
+}
+
+.usr-loc {
+    margin-top: 16px;
+    font-size: 15px;
+    text-align: right;
+    color: #d8d8d8;
+    font-weight: 800;
+    float: right;
+}
+
+.emotion {
+    position: relative;
+    color: #d8d8d8;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: right;
+    padding-right: 10px;
+}

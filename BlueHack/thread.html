@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Blue Hack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <script src="assets/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="assets/main.css" />
+</head>
+<body>
+    <div id="thread-container" class="container">
+        <div class="topper">
+            <div class="vertical-center">
+                <p id="label1">Thread</p>
+            </div>
+        </div>
+        <div class="message-holder">
+            <div class="user-bubble-me">
+                <div class="bubble-user-img-holder-me"><img class="user-avatar-me" src="assets/girl.png" /></div>
+                <p class="message-text-me">Hello! how are you</p>
+            </div>
+            <div class="user-bubble">
+                <div class="bubble-user-img-holder"><img class="user-avatar" src="assets/man.png" /></div>
+                <p class="message-text">Thank you!</p>
+            </div>
+            <div class="user-bubble-me">
+                <div class="bubble-user-img-holder-me"><img class="user-avatar-me" src="assets/man.png" " /></div>
+                <p class="message-text-me">Welcome</p>
+            </div>
+
+        </div>
+        <div class="messages">
+            <textarea id="user-messages" placeholder="Enter Message"></textarea>
+            <button type="button" id="send-btn" class="btn btn-info">Send <span class="glyphicon glyphicon-send"></span></button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            function UserToBeAppend(userType) {
+
+                var user_bubble = document.createElement("div");
+                var div_for_user_holder_img = document.createElement("div");
+                var avatar_user = document.createElement("img");
+                var user_messages = document.createElement("p");
+
+                if (userType == 1) {
+
+                    $(user_bubble).addClass("user-bubble-me");
+                    $(div_for_user_holder_img).addClass("bubble-user-img-holder-me");
+                    $(avatar_user).addClass("user-avatar-me");
+                    $(user_messages).addClass("message-text-me");
+
+                    $(user_bubble).append(div_for_user_holder_img);
+                    $(div_for_user_holder_img).append(avatar_user);
+                    $(avatar_user).attr("src", "assets/man.png");
+
+                    $(user_messages).text($("#user-messages").val());
+
+                    $(user_bubble).append(user_messages);
+                    $("#user-messages").val("");
+
+                } else if (2) {
+
+                    $(user_bubble).addClass("user-bubble");
+                    $(div_for_user_holder_img).addClass("bubble-user-img-holder");
+                    $(avatar_user).addClass("user-avatar");
+                    $(user_messages).addClass("message-text");
+
+                    $(user_bubble).append(div_for_user_holder_img);
+                    $(div_for_user_holder_img).append(avatar_user);
+                    $(avatar_user).attr("src", "assets/man.png");
+                }
+
+                $(".message-holder").append(user_bubble);
+            }
+
+            $("#send-btn").click(function () {
+                if ($("#user-messages").val() != "") {
+                    UserToBeAppend(1);
+                    $(".message-holder").animate({ scrollTop: $(".message-holder")[0].scrollHeight }, 1000);
+                    
+                }
+            });
+
+        });
+    </script>
+</body>
+</html>
