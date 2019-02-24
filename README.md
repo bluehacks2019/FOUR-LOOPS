@@ -4,7 +4,7 @@ Jun Ben Enriquez
 Romeo Dela Cruz Angeles Jr.
 
 
-"Mii" - A  self-care awareness app that will help you monitor how you live your life.
+#"Mii" - A  self-care awareness app that will help you monitor how you live your life.
 
 It's easy to install. Just install the .apk file.
 
