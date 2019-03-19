@@ -16,10 +16,7 @@
         $query->fetch();
 
         echo "inserted";
-        mysqli_stmt_close($query);
+        mysqli_stmt_close($query); // unecessary
         $conn->close();
-    }else{
-        
     }
-
     ?>
